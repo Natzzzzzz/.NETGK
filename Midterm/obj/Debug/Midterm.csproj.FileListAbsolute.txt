@@ -1,0 +1,116 @@
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\bin\Debug\Midterm.exe.config
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\bin\Debug\Midterm.exe
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\bin\Debug\Midterm.pdb
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\bin\Debug\System.Data.SqlClient.dll
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\bin\Debug\System.Data.SqlClient.xml
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.csproj.AssemblyReference.cache
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.csproj.SuggestedBindingRedirects.cache
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.GUI.Car.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.GUI.CarType.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.GUI.CarManage.CarOrder.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.GUI.CustomerManage.Customer.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.GUI.CustomerManage.CustomerManage.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.GUI.Login.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.Main.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.GUI.OrderManage.AddCar.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.GUI.OrderManage.CarManage.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.GUI.ScheduleManage.BillRental.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.GUI.ScheduleManage.ScheduleManage.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.GUI.Statistic.Statictis.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.Properties.Resources.resources
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.csproj.GenerateResource.cache
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.csproj.CoreCompileInputs.cache
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.csproj.CopyComplete
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.exe
+D:\TDT\Nam3\hk1_nam3\.Net\BCGK\Midterm\obj\Debug\Midterm.pdb
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\bin\Debug\Midterm.exe.config
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\bin\Debug\Midterm.exe
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\bin\Debug\Midterm.pdb
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\bin\Debug\System.Data.SqlClient.dll
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\bin\Debug\System.Data.SqlClient.xml
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.csproj.AssemblyReference.cache
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.CarManage.CarDetail.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.CarManage.UpdateCar.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.CarOrder.Car.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.CarOrder.CarType.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.CarOrder.CarOrder.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.CustomerManage.Customer.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.CustomerManage.CustomerManage.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.Login.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.Main.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.CarManage.AddCar.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.CarManage.CarManage.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.ScheduleManage.BillRental.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.ScheduleManage.ScheduleManage.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.Statistic.Statictis.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.Properties.Resources.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.csproj.GenerateResource.cache
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.csproj.CoreCompileInputs.cache
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.csproj.CopyComplete
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.exe
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.pdb
+D:\Tailieu\code\Nam 3\.NET\Midterm\BCGK\Midterm\obj\Debug\Midterm.GUI.CustomerManage.UpdateCustomer.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\bin\Debug\Midterm.exe.config
+C:\Users\THANH HUY\Downloads\sang28\Midterm\bin\Debug\Midterm.exe
+C:\Users\THANH HUY\Downloads\sang28\Midterm\bin\Debug\Midterm.pdb
+C:\Users\THANH HUY\Downloads\sang28\Midterm\bin\Debug\System.Data.SqlClient.dll
+C:\Users\THANH HUY\Downloads\sang28\Midterm\bin\Debug\System.Data.SqlClient.xml
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.csproj.AssemblyReference.cache
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.csproj.SuggestedBindingRedirects.cache
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.CarManage.CarDetail.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.CarManage.UpdateCar.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.CarOrder.Car.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.CarOrder.CarType.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.CarOrder.CarOrder.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.CustomerManage.Customer.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.CustomerManage.CustomerManage.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.CustomerManage.UpdateCustomer.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.Login.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.Main.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.CarManage.AddCar.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.CarManage.CarManage.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.ScheduleManage.BillRental.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.ScheduleManage.ScheduleManage.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.GUI.Statistic.Statictis.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.Properties.Resources.resources
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.csproj.GenerateResource.cache
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.csproj.CoreCompileInputs.cache
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.csproj.CopyComplete
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.exe
+C:\Users\THANH HUY\Downloads\sang28\Midterm\obj\Debug\Midterm.pdb
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.csproj.AssemblyReference.cache
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CarManage.CarDetail.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CarManage.UpdateCar.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CarOrder.Car.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CarOrder.CarType.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CarOrder.CarOrder.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CustomerManage.Customer.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CustomerManage.CustomerManage.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CustomerManage.UpdateCustomer.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.Login.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.Main.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CarManage.AddCar.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CarManage.CarManage.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.ScheduleManage.BillRental.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.ScheduleManage.ScheduleManage.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.Statistic.Statictis.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.Properties.Resources.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.csproj.GenerateResource.cache
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.csproj.CoreCompileInputs.cache
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.exe
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.pdb
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\Midterm.exe.config
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\Midterm.exe
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\Midterm.pdb
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\System.Data.SqlClient.dll
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\System.Data.SqlClient.xml
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.csproj.CopyComplete
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.dll
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.WinForms.dll
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.Wpf.dll
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.pdb
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.xml
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.WinForms.pdb
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.WinForms.xml
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.Wpf.pdb
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.Wpf.xml
