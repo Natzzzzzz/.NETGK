@@ -46,7 +46,7 @@ namespace Midterm.GUI.CustomerManage
             this.btnEditCustomer.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnEditCustomer.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold);
             this.btnEditCustomer.ForeColor = System.Drawing.Color.Transparent;
-            this.btnEditCustomer.Location = new System.Drawing.Point(835, 40);
+            this.btnEditCustomer.Location = new System.Drawing.Point(990, 40);
             this.btnEditCustomer.Name = "btnEditCustomer";
             this.btnEditCustomer.Size = new System.Drawing.Size(149, 42);
             this.btnEditCustomer.TabIndex = 11;
@@ -59,7 +59,7 @@ namespace Midterm.GUI.CustomerManage
             this.btnDeleteCustomer.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnDeleteCustomer.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold);
             this.btnDeleteCustomer.ForeColor = System.Drawing.Color.Transparent;
-            this.btnDeleteCustomer.Location = new System.Drawing.Point(675, 40);
+            this.btnDeleteCustomer.Location = new System.Drawing.Point(830, 40);
             this.btnDeleteCustomer.Name = "btnDeleteCustomer";
             this.btnDeleteCustomer.Size = new System.Drawing.Size(149, 42);
             this.btnDeleteCustomer.TabIndex = 10;
@@ -72,7 +72,7 @@ namespace Midterm.GUI.CustomerManage
             this.btnAddCustomer.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold);
             this.btnAddCustomer.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAddCustomer.Location = new System.Drawing.Point(512, 40);
+            this.btnAddCustomer.Location = new System.Drawing.Point(667, 40);
             this.btnAddCustomer.Name = "btnAddCustomer";
             this.btnAddCustomer.Size = new System.Drawing.Size(149, 42);
             this.btnAddCustomer.TabIndex = 9;
@@ -105,7 +105,7 @@ namespace Midterm.GUI.CustomerManage
             this.dgvCustomers.Name = "dgvCustomers";
             this.dgvCustomers.RowHeadersWidth = 51;
             this.dgvCustomers.RowTemplate.Height = 25;
-            this.dgvCustomers.Size = new System.Drawing.Size(937, 369);
+            this.dgvCustomers.Size = new System.Drawing.Size(1092, 369);
             this.dgvCustomers.TabIndex = 13;
             // 
             // CustomerManage
@@ -119,7 +119,7 @@ namespace Midterm.GUI.CustomerManage
             this.Controls.Add(this.picBox);
             this.Controls.Add(this.tbSearch);
             this.Name = "CustomerManage";
-            this.Size = new System.Drawing.Size(1030, 500);
+            this.Size = new System.Drawing.Size(1160, 500);
             this.Load += new System.EventHandler(this.CustomerManage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();

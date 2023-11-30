@@ -42,6 +42,7 @@ namespace Midterm
             this.panel_title = new System.Windows.Forms.Panel();
             this.lbl_title = new System.Windows.Forms.Label();
             this.panel_main = new System.Windows.Forms.Panel();
+            this.btnAccount = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel_title.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +50,7 @@ namespace Midterm
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.Controls.Add(this.btnAccount);
             this.panel1.Controls.Add(this.btnCustomer);
             this.panel1.Controls.Add(this.btnCar);
             this.panel1.Controls.Add(this.menu_active);
@@ -106,6 +108,7 @@ namespace Midterm
             this.btnSignOut.TabIndex = 5;
             this.btnSignOut.Text = "Đăng xuất";
             this.btnSignOut.UseVisualStyleBackColor = false;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // btnReport
             // 
@@ -153,14 +156,14 @@ namespace Midterm
             this.panel_title.ForeColor = System.Drawing.SystemColors.Control;
             this.panel_title.Location = new System.Drawing.Point(200, 1);
             this.panel_title.Name = "panel_title";
-            this.panel_title.Size = new System.Drawing.Size(1032, 85);
+            this.panel_title.Size = new System.Drawing.Size(1168, 85);
             this.panel_title.TabIndex = 0;
             // 
             // lbl_title
             // 
             this.lbl_title.AutoSize = true;
             this.lbl_title.Font = new System.Drawing.Font("Book Antiqua", 20.25F, System.Drawing.FontStyle.Bold);
-            this.lbl_title.Location = new System.Drawing.Point(401, 23);
+            this.lbl_title.Location = new System.Drawing.Point(457, 23);
             this.lbl_title.Name = "lbl_title";
             this.lbl_title.Size = new System.Drawing.Size(73, 32);
             this.lbl_title.TabIndex = 0;
@@ -171,14 +174,27 @@ namespace Midterm
             this.panel_main.BackColor = System.Drawing.SystemColors.Control;
             this.panel_main.Location = new System.Drawing.Point(202, 86);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1030, 500);
+            this.panel_main.Size = new System.Drawing.Size(1166, 500);
             this.panel_main.TabIndex = 1;
+            // 
+            // btnAccount
+            // 
+            this.btnAccount.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnAccount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnAccount.ForeColor = System.Drawing.Color.Transparent;
+            this.btnAccount.Location = new System.Drawing.Point(24, 421);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(176, 70);
+            this.btnAccount.TabIndex = 9;
+            this.btnAccount.Text = "Thêm người dùng";
+            this.btnAccount.UseVisualStyleBackColor = false;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1234, 591);
+            this.ClientSize = new System.Drawing.Size(1369, 591);
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel_title);
             this.Controls.Add(this.panel1);
@@ -206,5 +222,6 @@ namespace Midterm
         private Panel menu_active;
         private Button btnCar;
         private Button btnCustomer;
+        private Button btnAccount;
     }
 }

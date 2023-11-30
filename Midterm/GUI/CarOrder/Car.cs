@@ -29,11 +29,14 @@ namespace Midterm.GUI.CarOrder
             { "map", 0.0 },{ "curbsideCamera", 50.0 },{ "tireSensor", 30.0 },{ "carWindows", 100.0 },{ "USB", 20.0 },{ "trunkLid", 80.0 },{ "bluetooth", 0.0 },{ "cameraJourney", 60.0 },{ "collisionSensor", 40.0 },{ "GPS", 70.0 },{ "spareTire", 100.0 },{ "camera360", 90.0 },{ "reversingCamera", 50.0 },{ "speedWarning", 30.0 }
         };
         public string category;
-        public Car(String carCategory)
+        public string userID;
+        public Car(String carCategory, string userID)
         {
             InitializeComponent();
             this.category = carCategory;
+            this.userID = userID;
             tbLoaiXe.Text = carCategory;
+            tbTotalMoney.ReadOnly = true;
 
             ManageHistoryBLL historyBLL = new ManageHistoryBLL();
 
@@ -104,11 +107,6 @@ namespace Midterm.GUI.CarOrder
         {
             ManageHistoryBLL historyBLL = new ManageHistoryBLL();
             History history = new History();
-            if (cbBrand.Text == "" || cbName.Text =="" || tbFullName.Text == "" || tbPhoneNumber.Text == "" || tbAddress.Text == "" || cbStartPoint.Text == "" || cbEndPoint.Text == "")
-            {
-                MessageBox.Show("Vui lòng nhập đủ thông tin!!!");
-                return;
-            }
             
 
             //Add History
@@ -119,7 +117,7 @@ namespace Midterm.GUI.CarOrder
             history.startPoint = cbStartPoint.Text;
             history.endPoint = cbEndPoint.Text;
             history.totalMoney = float.Parse(tbTotalMoney.Text);
-            history.accountID = "S00002";
+            history.accountID = userID;
             if (historyBLL.getCustomerIDBLL(tbFullName.Text, tbPhoneNumber.Text, tbAddress.Text) == null)
             {
                 Customers customer = new Customers();
@@ -138,6 +136,7 @@ namespace Midterm.GUI.CarOrder
             if (dateTimePicker1.Value > dateTimePicker2.Value)
             {
                 MessageBox.Show("Ngày thuê không được vượt qua ngày trả");
+                return;
             }
             else
             {
@@ -163,8 +162,7 @@ namespace Midterm.GUI.CarOrder
 
             manageCarsBLL.updateStatusCarBLL(car);
 
-            //Đóng form
-            this.Close();
+            
         }
 
         private void CheckBox_CheckedChanged(object sender, EventArgs e)
@@ -192,9 +190,7 @@ namespace Midterm.GUI.CarOrder
                 tbTotalMoney.Text = (double.Parse(tbTotalMoney.Text) - (totalRental * (dateTimePicker2.Value.Subtract(dateTimePicker1.Value).Days + 1))).ToString();
 
             }
-            bool anyCheckboxChecked = checkBoxMapping.Any(pair => pair.Value.Checked);
             totalRentalTotal = double.Parse(tbTotalMoney.Text);
-            tbTotalMoney.ReadOnly = anyCheckboxChecked;
 
 
         }
@@ -273,7 +269,6 @@ namespace Midterm.GUI.CarOrder
             {
                 totalRental = double.Parse(row["carRental"].ToString().Trim());
             }
-            MessageBox.Show(tbTotalMoney.Text);
             tbTotalMoney.Text = (totalRentalTotal * (dateTimePicker2.Value.Subtract(dateTimePicker1.Value).Days+1)).ToString();
         }
 
@@ -291,6 +286,18 @@ namespace Midterm.GUI.CarOrder
                 totalRental = double.Parse(row["carRental"].ToString().Trim());
             }
             tbTotalMoney.Text = (totalRentalTotal * (dateTimePicker2.Value.Subtract(dateTimePicker1.Value).Days + 1)).ToString();
+        }
+
+        private void tbPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

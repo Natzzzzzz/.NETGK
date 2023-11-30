@@ -68,11 +68,15 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\AccountBLL.cs" />
+    <Compile Include="BLL\LoginBLL.cs" />
     <Compile Include="BLL\ManageCarsBLL.cs" />
     <Compile Include="BLL\ManageCustomersBLL.cs" />
     <Compile Include="BLL\ManageHistoryBLL.cs" />
     <Compile Include="BLL\ManageScheduleBLL.cs" />
     <Compile Include="BLL\StatictisBLL.cs" />
+    <Compile Include="DAL\AccountDAL.cs" />
+    <Compile Include="DAL\LoginDAL.cs" />
     <Compile Include="DAL\ManageCarsDAL.cs" />
     <Compile Include="DAL\ManageCustomersDAL.cs" />
     <Compile Include="DAL\ManageHistoryDAL.cs" />
@@ -82,6 +86,24 @@
     <Compile Include="DTO\Cars.cs" />
     <Compile Include="DTO\Customers.cs" />
     <Compile Include="DTO\History.cs" />
+    <Compile Include="GUI\Account\Account.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Account\Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Account\AddAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Account\AddAccount.Designer.cs">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Account\UpdateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Account\UpdateAccount.Designer.cs">
+      <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\CarManage\CarDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,11 +182,17 @@
     <Compile Include="GUI\ScheduleManage\BillRental.Designer.cs">
       <DependentUpon>BillRental.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ScheduleManage\ScheduleManage.cs">
+    <Compile Include="GUI\ScheduleManage\Schedule.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\ScheduleManage\ScheduleManage.Designer.cs">
-      <DependentUpon>ScheduleManage.cs</DependentUpon>
+    <Compile Include="GUI\ScheduleManage\Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainStaff.Designer.cs">
+      <DependentUpon>MainStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Statistic\Statictis.cs">
       <SubType>UserControl</SubType>
@@ -174,6 +202,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Account\Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Account\AddAccount.resx">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Account\UpdateAccount.resx">
+      <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\CarManage\CarDetail.resx">
       <DependentUpon>CarDetail.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,8 +250,11 @@
     <EmbeddedResource Include="GUI\ScheduleManage\BillRental.resx">
       <DependentUpon>BillRental.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ScheduleManage\ScheduleManage.resx">
-      <DependentUpon>ScheduleManage.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\ScheduleManage\Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainStaff.resx">
+      <DependentUpon>MainStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Statistic\Statictis.resx">
       <DependentUpon>Statictis.cs</DependentUpon>

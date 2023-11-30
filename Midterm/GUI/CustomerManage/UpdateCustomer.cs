@@ -31,6 +31,7 @@ namespace Midterm.GUI.CustomerManage
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
             Customers customer = new Customers();
+            customer.customerID = this.id;
             customer.fullName = tbFullName.Text;
             customer.phoneNumber = tbPhoneNumber.Text;
             customer.address = tbAddress.Text;

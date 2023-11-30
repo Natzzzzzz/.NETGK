@@ -92,6 +92,10 @@ namespace Midterm.GUI.CarManage
                     {
                         checkBox.Checked = true;
                     }
+                    else
+                    {
+                        checkBox.Checked = false;
+                    }
                 }
             }
             tbHangXe.ReadOnly = true;
@@ -140,16 +144,11 @@ namespace Midterm.GUI.CarManage
         private void btnSave_Click(object sender, EventArgs e)
         {
             ManageCarsBLL update = new ManageCarsBLL();
-            if (tbLoaiXe.Text == "" || tbHangXe.Text == "" || tbTenXe.Text == "" || !rdbAll.Checked && !rdbDau.Checked && !rdbDien.Checked && !rdbXang.Checked)
-                MessageBox.Show("Nhập thiếu thông tin, vui lòng bổ sung!!");
-            else
-            {
                 car.carID = id;
                 car.carCategory = tbLoaiXe.Text;
                 car.carBrand = tbHangXe.Text;
                 car.carName = tbTenXe.Text;
-            }
-               
+                car.carRental = double.Parse(tbRental.Text);
             if (rdbAll.Checked)
             {
                 car.carFuel = "Tất cả";
@@ -177,18 +176,9 @@ namespace Midterm.GUI.CarManage
                 string propertyName = propertyMap.Key;
                 CheckBox checkBox = propertyMap.Value;
 
-                if (checkBox.Checked)
-                {
-                    // Gán giá trị "Có" vào thuộc tính tương ứng của đối tượng newCar
-                    typeof(Cars).GetProperty(propertyName)?.SetValue(car, "Có");
-                }
-                else
-                {
-                    // Gán giá trị "Không" vào thuộc tính tương ứng của đối tượng newCar nếu không được chọn
-                    typeof(Cars).GetProperty(propertyName)?.SetValue(car, "Không");
-                }
+                if (checkBox.Checked){typeof(Cars).GetProperty(propertyName)?.SetValue(car, "Có");}
+                else{typeof(Cars).GetProperty(propertyName)?.SetValue(car, "Không");}
             }
-
             update.updateCarBLL(car);
             this.Close();   
         }

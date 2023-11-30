@@ -92,7 +92,6 @@ D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.Main.resource
 D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CarManage.AddCar.resources
 D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.CarManage.CarManage.resources
 D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.ScheduleManage.BillRental.resources
-D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.ScheduleManage.ScheduleManage.resources
 D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.Statistic.Statictis.resources
 D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.Properties.Resources.resources
 D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.csproj.GenerateResource.cache
@@ -114,3 +113,8 @@ D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.WinForms.p
 D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.WinForms.xml
 D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.Wpf.pdb
 D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\bin\Debug\LiveCharts.Wpf.xml
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.Account.Account.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.Account.AddAccount.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.Account.UpdateAccount.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.ScheduleManage.Schedule.resources
+D:\Tailieu\code\Nam 3\.NET\Midterm\22h28\Midterm\obj\Debug\Midterm.GUI.Staff.MainStaff.resources

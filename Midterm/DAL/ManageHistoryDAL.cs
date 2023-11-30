@@ -20,8 +20,11 @@ namespace Midterm.DAL
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "SELECT H.bookingDate AS [Ngày tạo], H.startDate AS [Ngày thuê], H.endDate AS [Ngày trả], Cu.fullName AS [Họ tên], Cu.phoneNumber AS [SĐT], Cu.address AS [Đ/c], C.carName AS [Tên Xe], C.carCategory AS [Loại], C.carBrand AS [Hãng], H.totalMoney AS [Tổng tiền], H.paymentStatus AS [Trạng thái]" +
-                "FROM History H INNER JOIN Customers Cu ON H.customerID = Cu.customerID INNER JOIN Cars C ON H.carID = C.carID WHERE C.carCategory =@category; ";
+            String sSQL = "SELECT A.fullName AS [Người tạo đơn], H.bookingDate AS [Ngày tạo], H.startDate AS [Ngày thuê], H.endDate AS [Ngày trả], Cu.fullName AS [Họ tên], Cu.phoneNumber AS [SĐT], Cu.address AS [Đ/c], C.carName AS [Tên Xe], C.carCategory AS [Loại], C.carBrand AS [Hãng], H.totalMoney AS [Tổng tiền], H.paymentStatus AS [Trạng thái] " +
+                "FROM History H INNER JOIN Customers Cu ON H.customerID = Cu.customerID " +
+                "INNER JOIN Cars C ON H.carID = C.carID " +
+                "INNER JOIN Accounts A ON H.accountID = A.accountID " +
+                "WHERE C.carCategory = @category;";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.Parameters.AddWithValue("@category", carCategory);
             SqlDataAdapter da = new SqlDataAdapter(cmd);

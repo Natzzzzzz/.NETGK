@@ -19,7 +19,7 @@ namespace Midterm.DAL
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "SELECT * FROM Customers ";
+            String sSQL = "SELECT customerID AS [ID], fullName AS [Họ và tên], phoneNumber AS [Số điện thoại], address AS [Địa chỉ] FROM Customers ";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -92,14 +92,15 @@ namespace Midterm.DAL
             DataTable dt = new DataTable();
             if (key == null || key.Equals(""))
             {
-                String sSQL = "select * from Customers";
+                String sSQL = "select customerID AS [ID], fullName AS [Họ và tên], phoneNumber AS [Số điện thoại], address AS [Địa chỉ] from Customers";
                 SqlCommand cmd = new SqlCommand(sSQL, conn);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
             }
             else
             {
-                string sSQL = "SELECT DISTINCT * FROM Customers WHERE fullName LIKE '%' + @key + '%' OR fullName LIKE @key + '%' OR phoneNumber LIKE '%' + @key + '%' OR phoneNumber LIKE @key + '%'";
+                string sSQL = "SELECT DISTINCT customerID AS [ID], fullName AS [Họ và tên], phoneNumber AS [Số điện thoại], address AS [Địa chỉ] FROM Customers " +
+                    "WHERE fullName LIKE '%' + @key + '%' OR fullName LIKE @key + '%' OR phoneNumber LIKE '%' + @key + '%' OR phoneNumber LIKE @key + '%'";
                 SqlCommand cmd = new SqlCommand(sSQL, conn);
                 cmd.Parameters.AddWithValue("@key", key);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);

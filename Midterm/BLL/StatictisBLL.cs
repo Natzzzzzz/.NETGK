@@ -23,5 +23,25 @@ namespace Midterm.BLL
         {
             return statictisDAL.statictisCarByCategoryDAL();
         }
+
+        public DataTable statictisRevenueByMonthBLL()
+        {
+            return statictisDAL.statictisRevenueByMonthDAL();
+        }
+
+        public DataTable statictisRevenueByYearBLL()
+        {
+            return statictisDAL.statictisRevenueByYearDAL();
+        }
+
+        public String getFirstDateOfMonthBLL()
+        {
+            return statictisDAL.getFirstDayOfMonthDAL();
+        }
+
+        public String getLastDateOfMonthBLL()
+        {
+            return statictisDAL.getLastDayOfMonthDAL();
+        }
     }
 }

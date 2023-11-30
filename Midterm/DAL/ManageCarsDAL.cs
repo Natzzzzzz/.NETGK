@@ -20,7 +20,7 @@ namespace Midterm.DAL
         {
             SqlConnection conn = new SqlConnection(strConn);
             conn.Open();
-            String sSQL = "SELECT carID AS [ID Xe], carName AS [Tên xe], carCategory AS [Loại xe], carBrand AS [Hãng xe], carFuel AS [Nhiên liệu] FROM Cars WHERE carCategory = @category";
+            String sSQL = "SELECT carID AS [ID Xe], carName AS [Tên xe], carCategory AS [Loại xe], carBrand AS [Hãng xe], carFuel AS [Nhiên liệu], carRental AS [Giá thuê / ngày] FROM Cars WHERE carCategory = @category";
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             cmd.Parameters.AddWithValue("@category", category);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -87,7 +87,7 @@ namespace Midterm.DAL
             {
                 SqlConnection conn = new SqlConnection(strConn);
                 conn.Open();
-                String sSQL = "update Cars set carName=@name, carCategory=@category, carBrand=@brand, carFuel=@fuel, carStatus=@status, map=@map, curbsideCamera=@curbsideCamera, tireSensor=@tireSensor" +
+                String sSQL = "update Cars set carName=@name, carCategory=@category, carBrand=@brand, carFuel=@fuel, carStatus=@status,carRental = @carRental, map=@map, curbsideCamera=@curbsideCamera, tireSensor=@tireSensor" +
                     ", carWindows=@carWindows, USB=@USB, trunkLid=@trunkLid, bluetooth=@bluetooth,  cameraJourney=@cameraJourney, collisionSensor=@collisionSensor, GPS=@GPS, spareTire=@spareTire," +
                     "camera360=@camera360, reversingCamera=@reversingCamera,  speedWarning=@speedWarning where carID=@id";
                 SqlCommand cmd = new SqlCommand(sSQL, conn);
@@ -97,6 +97,7 @@ namespace Midterm.DAL
                 cmd.Parameters.AddWithValue("@brand", car.carBrand);
                 cmd.Parameters.AddWithValue("@fuel", car.carFuel);
                 cmd.Parameters.AddWithValue("@status", car.carStatus);
+                cmd.Parameters.AddWithValue("@carRental", car.carRental);
                 cmd.Parameters.AddWithValue("@map", car.map);
                 cmd.Parameters.AddWithValue("@curbsideCamera", car.curbsideCamera);
                 cmd.Parameters.AddWithValue("@tireSensor", car.tireSensor);

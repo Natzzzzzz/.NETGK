@@ -4,7 +4,6 @@ create database ProjectCSharpMidterm
 go
 use ProjectCSharpMidterm
 go
-
 CREATE TABLE Cars
 (
     carID NVARCHAR(10) PRIMARY KEY,
@@ -70,8 +69,221 @@ BEGIN
 	VALUES (@newCarID, @carName, @carCategory, @carBrand, @carFuel, @carStatus, @carRental, @map, @curbsideCamera, @tireSensor, @carWindows, @USB, @trunkLid, @bluetooth, @cameraJourney, @collisionSensor, @GPS, @spareTire, @camera360, @reversingCamera, @speedWarning);
 
 END;
-GO
 
+GO
+DECLARE @Counter INT = 1;
+
+WHILE @Counter <= 30
+BEGIN
+    DECLARE @CarName NVARCHAR(255) = N'Mini Cooper' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarCategory NVARCHAR(255) = N'Mini';
+    DECLARE @CarBrand NVARCHAR(255) = N'Mini Brand ' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarFuel NVARCHAR(255) = N'Xăng';
+    DECLARE @CarStatus NVARCHAR(255) = N'Trống';
+    DECLARE @CarRental FLOAT = 30.0;
+    DECLARE @Map NVARCHAR(255) = N'Không';
+    DECLARE @CurbsideCamera NVARCHAR(255) = N'Không';
+    DECLARE @TireSensor NVARCHAR(255) = N'Không';
+    DECLARE @CarWindows NVARCHAR(255) = N'Không';
+    DECLARE @USB NVARCHAR(255) = N'Không';
+    DECLARE @TrunkLid NVARCHAR(255) = N'Không';
+    DECLARE @Bluetooth NVARCHAR(255) = N'Không';
+    DECLARE @CameraJourney NVARCHAR(255) = N'Không';
+    DECLARE @CollisionSensor NVARCHAR(255) = N'Không';
+    DECLARE @GPS NVARCHAR(255) = N'Không';
+    DECLARE @SpareTire NVARCHAR(255) = N'Không';
+    DECLARE @Camera360 NVARCHAR(255) = N'Không';
+    DECLARE @ReversingCamera NVARCHAR(255) = N'Không';
+    DECLARE @SpeedWarning NVARCHAR(255) = N'Không';
+
+    EXEC InsertCar @CarName, @CarCategory, @CarBrand, @CarFuel, @CarStatus, @CarRental, @Map, @CurbsideCamera, @TireSensor, @CarWindows, @USB, @TrunkLid, @Bluetooth, @CameraJourney, @CollisionSensor, @GPS, @SpareTire, @Camera360, @ReversingCamera, @SpeedWarning;
+
+    SET @Counter = @Counter + 1;
+END;
+GO
+DECLARE @Counter INT = 1;
+
+SET @Counter = 1;
+
+WHILE @Counter <= 10
+BEGIN
+    DECLARE @CarName NVARCHAR(255) = N'Sedan' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarCategory NVARCHAR(255) = N'Sedan';
+    DECLARE @CarBrand NVARCHAR(255) = N'Sedan Brand' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarFuel NVARCHAR(255) = N'Xăng';
+    DECLARE @CarStatus NVARCHAR(255) = N'Trống';
+    DECLARE @CarRental FLOAT = 340.0;
+    DECLARE @Map NVARCHAR(255) = N'Không';
+    DECLARE @CurbsideCamera NVARCHAR(255) = N'Không';
+    DECLARE @TireSensor NVARCHAR(255) = N'Không';
+    DECLARE @CarWindows NVARCHAR(255) = N'Không';
+    DECLARE @USB NVARCHAR(255) = N'Không';
+    DECLARE @TrunkLid NVARCHAR(255) = N'Không';
+    DECLARE @Bluetooth NVARCHAR(255) = N'Không';
+    DECLARE @CameraJourney NVARCHAR(255) = N'Không';
+    DECLARE @CollisionSensor NVARCHAR(255) = N'Không';
+    DECLARE @GPS NVARCHAR(255) = N'Không';
+    DECLARE @SpareTire NVARCHAR(255) = N'Không';
+    DECLARE @Camera360 NVARCHAR(255) = N'Không';
+    DECLARE @ReversingCamera NVARCHAR(255) = N'Không';
+    DECLARE @SpeedWarning NVARCHAR(255) = N'Không';
+
+    EXEC InsertCar @CarName, @CarCategory, @CarBrand, @CarFuel, @CarStatus, @CarRental, @Map, @CurbsideCamera, @TireSensor, @CarWindows, @USB, @TrunkLid, @Bluetooth, @CameraJourney, @CollisionSensor, @GPS, @SpareTire, @Camera360, @ReversingCamera, @SpeedWarning;
+
+    SET @Counter = @Counter + 1;
+END;
+GO
+DECLARE @Counter INT = 1;
+
+WHILE @Counter <= 30
+BEGIN
+    DECLARE @CarName NVARCHAR(255) = N'Hatchback' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarCategory NVARCHAR(255) = N'Hatchback';
+    DECLARE @CarBrand NVARCHAR(255) = N'Hatchback Brand' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarFuel NVARCHAR(255) = N'Điện';
+    DECLARE @CarStatus NVARCHAR(255) = N'Trống';
+    DECLARE @CarRental FLOAT = 340.0;
+    DECLARE @Map NVARCHAR(255) = N'Không';
+    DECLARE @CurbsideCamera NVARCHAR(255) = N'Không';
+    DECLARE @TireSensor NVARCHAR(255) = N'Không';
+    DECLARE @CarWindows NVARCHAR(255) = N'Không';
+    DECLARE @USB NVARCHAR(255) = N'Không';
+    DECLARE @TrunkLid NVARCHAR(255) = N'Không';
+    DECLARE @Bluetooth NVARCHAR(255) = N'Không';
+    DECLARE @CameraJourney NVARCHAR(255) = N'Không';
+    DECLARE @CollisionSensor NVARCHAR(255) = N'Không';
+    DECLARE @GPS NVARCHAR(255) = N'Không';
+    DECLARE @SpareTire NVARCHAR(255) = N'Không';
+    DECLARE @Camera360 NVARCHAR(255) = N'Không';
+    DECLARE @ReversingCamera NVARCHAR(255) = N'Không';
+    DECLARE @SpeedWarning NVARCHAR(255) = N'Không';
+
+    EXEC InsertCar @CarName, @CarCategory, @CarBrand, @CarFuel, @CarStatus, @CarRental, @Map, @CurbsideCamera, @TireSensor, @CarWindows, @USB, @TrunkLid, @Bluetooth, @CameraJourney, @CollisionSensor, @GPS, @SpareTire, @Camera360, @ReversingCamera, @SpeedWarning;
+
+    SET @Counter = @Counter + 1;
+END;
+GO
+DECLARE @Counter INT = 1;
+
+WHILE @Counter <= 30
+BEGIN
+    DECLARE @CarName NVARCHAR(255) = N'SUV' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarCategory NVARCHAR(255) = N'SUV';
+    DECLARE @CarBrand NVARCHAR(255) = N'SUV Brand' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarFuel NVARCHAR(255) = N'Xăng';
+    DECLARE @CarStatus NVARCHAR(255) = N'Trống';
+    DECLARE @CarRental FLOAT = 300.0;
+    DECLARE @Map NVARCHAR(255) = N'Có';
+    DECLARE @CurbsideCamera NVARCHAR(255) = N'Không';
+    DECLARE @TireSensor NVARCHAR(255) = N'Không';
+    DECLARE @CarWindows NVARCHAR(255) = N'Có';
+    DECLARE @USB NVARCHAR(255) = N'Không';
+    DECLARE @TrunkLid NVARCHAR(255) = N'Không';
+    DECLARE @Bluetooth NVARCHAR(255) = N'Không';
+    DECLARE @CameraJourney NVARCHAR(255) = N'Không';
+    DECLARE @CollisionSensor NVARCHAR(255) = N'Không';
+    DECLARE @GPS NVARCHAR(255) = N'Không';
+    DECLARE @SpareTire NVARCHAR(255) = N'Không';
+    DECLARE @Camera360 NVARCHAR(255) = N'Không';
+    DECLARE @ReversingCamera NVARCHAR(255) = N'Không';
+    DECLARE @SpeedWarning NVARCHAR(255) = N'Không';
+
+    EXEC InsertCar @CarName, @CarCategory, @CarBrand, @CarFuel, @CarStatus, @CarRental, @Map, @CurbsideCamera, @TireSensor, @CarWindows, @USB, @TrunkLid, @Bluetooth, @CameraJourney, @CollisionSensor, @GPS, @SpareTire, @Camera360, @ReversingCamera, @SpeedWarning;
+
+    SET @Counter = @Counter + 1;
+END;
+GO
+DECLARE @Counter INT = 1;
+
+WHILE @Counter <= 30
+BEGIN
+    DECLARE @CarName NVARCHAR(255) = N'CUV ' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarCategory NVARCHAR(255) = N'CUV';
+    DECLARE @CarBrand NVARCHAR(255) = N'CUV Brand' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarFuel NVARCHAR(255) = N'Tất cả';
+    DECLARE @CarStatus NVARCHAR(255) = N'Trống';
+    DECLARE @CarRental FLOAT = 340.0;
+    DECLARE @Map NVARCHAR(255) = N'Không';
+    DECLARE @CurbsideCamera NVARCHAR(255) = N'Không';
+    DECLARE @TireSensor NVARCHAR(255) = N'Không';
+    DECLARE @CarWindows NVARCHAR(255) = N'Không';
+    DECLARE @USB NVARCHAR(255) = N'Không';
+    DECLARE @TrunkLid NVARCHAR(255) = N'Không';
+    DECLARE @Bluetooth NVARCHAR(255) = N'Không';
+    DECLARE @CameraJourney NVARCHAR(255) = N'Không';
+    DECLARE @CollisionSensor NVARCHAR(255) = N'Không';
+    DECLARE @GPS NVARCHAR(255) = N'Không';
+    DECLARE @SpareTire NVARCHAR(255) = N'Không';
+    DECLARE @Camera360 NVARCHAR(255) = N'Không';
+    DECLARE @ReversingCamera NVARCHAR(255) = N'Không';
+    DECLARE @SpeedWarning NVARCHAR(255) = N'Không';
+
+    EXEC InsertCar @CarName, @CarCategory, @CarBrand, @CarFuel, @CarStatus, @CarRental, @Map, @CurbsideCamera, @TireSensor, @CarWindows, @USB, @TrunkLid, @Bluetooth, @CameraJourney, @CollisionSensor, @GPS, @SpareTire, @Camera360, @ReversingCamera, @SpeedWarning;
+
+    SET @Counter = @Counter + 1;
+END;
+GO
+DECLARE @Counter INT = 1;
+
+WHILE @Counter <= 30
+BEGIN
+    DECLARE @CarName NVARCHAR(255) = N'MPV ' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarCategory NVARCHAR(255) = N'MPV';
+    DECLARE @CarBrand NVARCHAR(255) = N'MPV Brand' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarFuel NVARCHAR(255) = N'Dầu';
+    DECLARE @CarStatus NVARCHAR(255) = N'Trống';
+    DECLARE @CarRental FLOAT = 340.0;
+    DECLARE @Map NVARCHAR(255) = N'Không';
+    DECLARE @CurbsideCamera NVARCHAR(255) = N'Không';
+    DECLARE @TireSensor NVARCHAR(255) = N'Không';
+    DECLARE @CarWindows NVARCHAR(255) = N'Không';
+    DECLARE @USB NVARCHAR(255) = N'Không';
+    DECLARE @TrunkLid NVARCHAR(255) = N'Không';
+    DECLARE @Bluetooth NVARCHAR(255) = N'Không';
+    DECLARE @CameraJourney NVARCHAR(255) = N'Không';
+    DECLARE @CollisionSensor NVARCHAR(255) = N'Không';
+    DECLARE @GPS NVARCHAR(255) = N'Không';
+    DECLARE @SpareTire NVARCHAR(255) = N'Không';
+    DECLARE @Camera360 NVARCHAR(255) = N'Không';
+    DECLARE @ReversingCamera NVARCHAR(255) = N'Không';
+    DECLARE @SpeedWarning NVARCHAR(255) = N'Không';
+
+    EXEC InsertCar @CarName, @CarCategory, @CarBrand, @CarFuel, @CarStatus, @CarRental, @Map, @CurbsideCamera, @TireSensor, @CarWindows, @USB, @TrunkLid, @Bluetooth, @CameraJourney, @CollisionSensor, @GPS, @SpareTire, @Camera360, @ReversingCamera, @SpeedWarning;
+
+    SET @Counter = @Counter + 1;
+END;
+
+GO
+DECLARE @Counter INT = 1;
+
+WHILE @Counter <= 30
+BEGIN
+    DECLARE @CarName NVARCHAR(255) = N'Bán tải ' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarCategory NVARCHAR(255) = N'Bán tải';
+    DECLARE @CarBrand NVARCHAR(255) = N'Bản tải ' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @CarFuel NVARCHAR(255) = N'Dầu';
+    DECLARE @CarStatus NVARCHAR(255) = N'Trống';
+    DECLARE @CarRental FLOAT = 340.0;
+    DECLARE @Map NVARCHAR(255) = N'Không';
+    DECLARE @CurbsideCamera NVARCHAR(255) = N'Không';
+    DECLARE @TireSensor NVARCHAR(255) = N'Không';
+    DECLARE @CarWindows NVARCHAR(255) = N'Không';
+    DECLARE @USB NVARCHAR(255) = N'Không';
+    DECLARE @TrunkLid NVARCHAR(255) = N'Không';
+    DECLARE @Bluetooth NVARCHAR(255) = N'Không';
+    DECLARE @CameraJourney NVARCHAR(255) = N'Không';
+    DECLARE @CollisionSensor NVARCHAR(255) = N'Không';
+    DECLARE @GPS NVARCHAR(255) = N'Không';
+    DECLARE @SpareTire NVARCHAR(255) = N'Không';
+    DECLARE @Camera360 NVARCHAR(255) = N'Không';
+    DECLARE @ReversingCamera NVARCHAR(255) = N'Không';
+    DECLARE @SpeedWarning NVARCHAR(255) = N'Không';
+
+    EXEC InsertCar @CarName, @CarCategory, @CarBrand, @CarFuel, @CarStatus, @CarRental, @Map, @CurbsideCamera, @TireSensor, @CarWindows, @USB, @TrunkLid, @Bluetooth, @CameraJourney, @CollisionSensor, @GPS, @SpareTire, @Camera360, @ReversingCamera, @SpeedWarning;
+
+    SET @Counter = @Counter + 1;
+END;
+GO
 EXEC InsertCar 'Mini Cooper1', 'Mini', 'Mini', N'Xăng', N'Trống', 340, 'Có', 'Không', 'Không', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
 EXEC InsertCar 'Mini Cooper2', 'Mini', 'Mini', N'Xăng', N'Trống', 340, 'Có', 'Không', 'Không', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
 EXEC InsertCar 'Mini Cooper3', 'Mini', 'Mini', N'Xăng', N'Trống', 370, 'Có', 'Không', 'Không', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
@@ -88,16 +300,13 @@ EXEC InsertCar 'SUV1', 'SUV', 'BrandS', N'Điện', 'Có', 340, 'Không', 'Có',
 EXEC InsertCar 'SUV2', 'SUV', 'BrandT', N'Điện', 'Không', 340, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
 EXEC InsertCar 'SUV3', 'SUV', 'BrandU', N'Điện', 'Có', 370, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
 EXEC InsertCar 'MPV1', 'MPV', 'BrandV', N'Xăng', 'Có', 340, 'Có', 'Không', 'Có', 'Có', 'Không', 'Có', 'Có', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
-EXEC InsertCar 'MPV2', 'MPV', 'BrandW', N'Dầu', 'Không', 340, 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không';
-delete from Cars
-delete from History
+
 
 GO
-
 create table Accounts
 (
 	accountID nvarchar(10) primary key,
-	fullName nvarchar(500,
+	fullName nvarchar(500),
 	phoneNumber nvarchar(500),
 	address nvarchar(500),
 	username nvarchar(500),
@@ -129,17 +338,27 @@ BEGIN
 
 END;
 
-drop procedure dbo.InsertStaff
-delete from Accounts
-
+GO
 INSERT INTO Accounts (accountID, fullName, phoneNumber, address, username, password, role) VALUES 
-('A00001', 'Admin User', '123456789', 'Admin Address', 'admin_user', 'admin_password', 'admin');
-
+('A00001', 'Admin User', '123456789', 'Admin Address', 'admin', 'admin', 'admin');
+GO
 EXEC InsertStaff N'Staff User 1', '987654322', 'Staff Address 1';
 EXEC InsertStaff N'Staff User 2', '987654322', 'Staff Address 2';
 EXEC InsertStaff N'Staff User 3', '987654323', 'Staff Address 3';
 EXEC InsertStaff N'Staff User 4', '987654324', 'Staff Address 4';
+GO
+DECLARE @Counter INT = 1;
 
+WHILE @Counter <= 20
+BEGIN
+    DECLARE @StaffName NVARCHAR(255) = 'Staff User ' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @PhoneNumber NVARCHAR(10) = '98765432' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @Address NVARCHAR(255) = 'Staff Address ' + CAST(@Counter AS NVARCHAR(2));
+
+    EXEC InsertStaff @StaffName, @PhoneNumber, @Address;
+
+    SET @Counter = @Counter + 1;
+END;
 GO
 create table Customers
 (
@@ -172,7 +391,6 @@ BEGIN
     VALUES (@newCustomersID, @fullName, @phoneNumber, @address);
 
 END;
-DROP PROCEDURE dbo.InsertCustomers
 
 GO
 EXEC InsertCustomers N'Nguyễn Văn A', '02146241567', N'187A Lê Văn Lương, Xã Phước Kiển, Huyện Nhà Bè, TP. Hồ Chí Minh';
@@ -185,8 +403,19 @@ EXEC InsertCustomers N'Võ Văn G', '01234567891', N'55 Cách Mạng Tháng Tám
 EXEC InsertCustomers N'Hoàng Văn H', '09876543211', N'123 Bùi Thị Xuân, Quận 1, TP. Hồ Chí Minh';
 EXEC InsertCustomers N'Ngô Thị I', '03698521472', N'321 Lê Lai, Quận 4, TP. Hồ Chí Minh';
 EXEC InsertCustomers N'Lý Văn K', '01234567892', N'88 Nguyễn Trãi, Quận 5, TP. Hồ Chí Minh';
+GO
+DECLARE @Counter INT = 1;
+WHILE @Counter <= 50
+BEGIN
+    DECLARE @CustomerName NVARCHAR(255) = N'Khách Hàng ' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @PhoneNumber NVARCHAR(10) = '0369852147' + CAST(@Counter AS NVARCHAR(2));
+    DECLARE @Address NVARCHAR(255) = N'Địa Chỉ ' + CAST(@Counter AS NVARCHAR(2)) + N', TP. Hồ Chí Minh';
 
-delete from Customers
+    EXEC InsertCustomers @CustomerName, @PhoneNumber, @Address;
+
+    SET @Counter = @Counter + 1;
+END;
+
 
 GO
 create table History
@@ -205,7 +434,6 @@ create table History
 	foreign key(accountID) references Accounts(accountID),
 	foreign key(carID) references Cars(carID)
 )
-drop table History
 go
 CREATE PROCEDURE InsertHistory
     @bookingDate DATETIME,
@@ -233,66 +461,61 @@ BEGIN
 
 END;
 
-drop procedure InsertHistory
+Go
+-- Năm 2023
 
-EXEC InsertHistory '2023-12-01 08:00:00', '2023-12-05 12:00:00', '2023-12-10 18:00:00', 'Chưa thanh toán', 'An Giang', 'An Giang', 500.00, 'A00001', 'C00001', 'Cs00001';
-EXEC InsertHistory '2023-12-02 10:00:00', '2023-12-11 14:00:00', '2023-12-15 20:00:00', 'Đã thanh toán', 'An Giang', 'An Giang', 750.50, 'S00002', 'C00001', 'Cs00002';
-EXEC InsertHistory '2023-12-05 12:00:00', '2023-12-15 16:00:00', '2023-12-20 22:00:00', 'Chưa thanh toán', 'An Giang', 'An Giang', 600.75, 'S00003', 'C00003', 'Cs00003';
-EXEC InsertHistory '2023-12-01 08:00:00', '2023-12-05 12:00:00', '2023-12-10 18:00:00', 'Đã thanh toán', 'An Giang', 'An Giang', 500.00, 'A00001', 'C00006', 'Cs00001';
-EXEC InsertHistory '2023-12-02 10:00:00', '2023-12-11 14:00:00', '2023-12-15 20:00:00', 'Chưa thanh toán', 'An Giang', 'An Giang', 750.50, 'S00002', 'C00001', 'Cs00002';
-EXEC InsertHistory '2023-12-05 12:00:00', '2023-12-15 16:00:00', '2023-12-20 22:00:00', 'Đã thanh toán', 'An Giang', 'An Giang', 600.75, 'S00003', 'C00003', 'Cs00003';
-EXEC InsertHistory '2023-12-05 12:00:00', '2023-12-15 16:00:00', '2023-12-20 22:00:00', 'Chưa thanh toán', 'An Giang', 'An Giang', 600.75, 'S00003', 'C00005', 'Cs00003';
-EXEC InsertHistory '2023-12-05 12:00:00', '2023-12-15 16:00:00', '2023-12-20 22:00:00', 'Đã thanh toán', 'An Giang', 'An Giang', 600.75, 'S00003', 'C00009', 'Cs00003';
-delete from History
+EXEC InsertHistory '2023-01-01 12:00:00', '2023-01-10 16:00:00', '2023-01-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 300.75, 'S00001', 'C00081', 'Cs00002';
+EXEC InsertHistory '2023-01-05 12:00:00', '2023-01-10 16:00:00', '2023-01-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 300.75, 'S00001', 'C00089', 'Cs00002';
+EXEC InsertHistory '2023-12-01 08:00:00', '2023-12-05 12:00:00', '2023-12-10 18:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 500.00, 'A00001', 'C00082', 'Cs00001';
+EXEC InsertHistory '2023-12-02 10:00:00', '2023-12-11 14:00:00', '2023-12-15 20:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 750.50, 'S00002', 'C00083', 'Cs00002';
+EXEC InsertHistory '2023-12-05 12:00:00', '2023-12-15 16:00:00', '2023-12-20 22:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 600.75, 'S00003', 'C00003', 'Cs00003';
+EXEC InsertHistory '2023-12-01 08:00:00', '2023-12-05 12:00:00', '2023-12-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 500.00, 'A00001', 'C00006', 'Cs00001';
+EXEC InsertHistory '2023-12-02 10:00:00', '2023-12-11 14:00:00', '2023-12-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 750.50, 'S00002', 'C00001', 'Cs00002';
+EXEC InsertHistory '2023-12-05 12:00:00', '2023-12-15 16:00:00', '2023-12-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 600.75, 'S00003', 'C00003', 'Cs00003';
+EXEC InsertHistory '2023-12-05 12:00:00', '2023-12-15 16:00:00', '2023-12-20 22:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 600.75, 'S00003', 'C00005', 'Cs00003';
+EXEC InsertHistory '2023-12-05 12:00:00', '2023-12-15 16:00:00', '2023-12-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 600.75, 'S00003', 'C00009', 'Cs00003';
+EXEC InsertHistory '2023-01-05 12:00:00', '2023-01-10 16:00:00', '2023-01-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 300.75, 'S00003', 'C00180', 'Cs00002';
+EXEC InsertHistory '2023-01-01 12:00:00', '2023-01-10 16:00:00', '2023-01-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 300.75, 'S00003', 'C00049', 'Cs00002';
+EXEC InsertHistory '2023-02-05 12:00:00', '2023-02-10 16:00:00', '2023-02-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 400.50, 'S00002', 'C00150', 'Cs00003';
+EXEC InsertHistory '2023-03-01 08:00:00', '2023-03-05 12:00:00', '2023-03-10 18:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 500.00, 'A00001', 'C00126', 'Cs00001';
+EXEC InsertHistory '2023-04-02 10:00:00', '2023-04-11 14:00:00', '2023-04-15 20:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 600.75, 'S00002', 'C00001', 'Cs00002';
+EXEC InsertHistory '2023-05-05 12:00:00', '2023-05-15 16:00:00', '2023-05-20 22:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 700.25, 'S00003', 'C00003', 'Cs00003';
+EXEC InsertHistory '2023-06-01 12:00:00', '2023-06-10 16:00:00', '2023-06-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 300.75, 'S00005', 'C00009', 'Cs00002';
+EXEC InsertHistory '2023-07-05 12:00:00', '2023-07-10 16:00:00', '2023-07-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 400.50, 'S00002', 'C00160', 'Cs00003';
+EXEC InsertHistory '2023-08-01 08:00:00', '2023-08-05 12:00:00', '2023-08-10 18:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 500.00, 'A00001', 'C00162', 'Cs00001';
+EXEC InsertHistory '2023-09-02 10:00:00', '2023-09-11 14:00:00', '2023-09-15 20:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 600.75, 'S00002', 'C00001', 'Cs00002';
+EXEC InsertHistory '2023-10-05 12:00:00', '2023-10-15 16:00:00', '2023-10-20 22:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 700.25, 'S00003', 'C00003', 'Cs00003';
+EXEC InsertHistory '2023-01-01 12:00:00', '2023-01-10 16:00:00', '2023-01-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 300.75, 'S00003', 'C00031', 'Cs00002';
+EXEC InsertHistory '2023-02-05 12:00:00', '2023-02-10 16:00:00', '2023-02-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 400.50, 'S00002', 'C00032', 'Cs00003';
+EXEC InsertHistory '2023-03-01 08:00:00', '2023-03-05 12:00:00', '2023-03-10 18:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 500.00, 'A00001', 'C00033', 'Cs00001';
+EXEC InsertHistory '2023-04-02 10:00:00', '2023-04-11 14:00:00', '2023-04-15 20:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 600.75, 'S00002', 'C00034', 'Cs00002';
+EXEC InsertHistory '2023-05-05 12:00:00', '2023-05-15 16:00:00', '2023-05-20 22:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 700.25, 'S00003', 'C00035', 'Cs00003';
+EXEC InsertHistory '2023-06-01 08:00:00', '2023-06-05 12:00:00', '2023-06-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 800.00, 'A00001', 'C00036', 'Cs00001';
+EXEC InsertHistory '2023-07-02 10:00:00', '2023-07-11 14:00:00', '2023-07-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 900.50, 'S00003', 'C00037', 'Cs00002';
+EXEC InsertHistory '2023-08-05 12:00:00', '2023-08-15 16:00:00', '2023-08-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1000.75, 'S00007', 'C00038', 'Cs00003';
+EXEC InsertHistory '2023-09-01 08:00:00', '2023-09-05 12:00:00', '2023-09-10 18:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 1100.00, 'A00002', 'C00039', 'Cs00001';
+GO
+-- Năm 2022
+EXEC InsertHistory '2022-11-01 08:00:00', '2022-11-05 12:00:00', '2022-11-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 800.50, 'A00001', 'C00006', 'Cs00001';
+EXEC InsertHistory '2022-12-02 10:00:00', '2022-12-11 14:00:00', '2022-12-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 900.75, 'S00002', 'C00135', 'Cs00002';
+EXEC InsertHistory '2022-01-05 12:00:00', '2022-01-15 16:00:00', '2022-01-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1000.25, 'S00003', 'C000179', 'Cs00003';
+EXEC InsertHistory '2022-02-01 08:00:00', '2022-02-05 12:00:00', '2022-02-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1100.75, 'S00003', 'C00200', 'Cs00003';
+EXEC InsertHistory '2022-03-02 10:00:00', '2022-03-11 14:00:00', '2022-03-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 1200.25, 'S00003', 'C00009', 'Cs00003';
+EXEC InsertHistory '2022-06-01 08:00:00', '2022-06-05 12:00:00', '2022-06-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 800.50, 'A00001', 'C00210', 'Cs00001';
+EXEC InsertHistory '2022-07-02 10:00:00', '2022-07-11 14:00:00', '2022-07-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 900.75, 'S00002', 'C00150', 'Cs00002';
+EXEC InsertHistory '2022-08-05 12:00:00', '2022-08-15 16:00:00', '2022-08-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1000.25, 'S00003', 'C00140', 'Cs00003';
+EXEC InsertHistory '2022-09-01 08:00:00', '2022-09-05 12:00:00', '2022-09-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1100.75, 'S00003', 'C000110', 'Cs00003';
+EXEC InsertHistory '2022-10-02 10:00:00', '2022-10-11 14:00:00', '2022-10-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 1200.25, 'S00003', 'C00206', 'Cs00003';
 
-create table Schedule 
-(
-	scheduleID nvarchar(10) primary key,
-	carID nvarchar(10),
-	customerID nvarchar(10),
-	historyID nvarchar(10),
-	startDate datetime,
-	endDate datetime,
-	startPoint nvarchar(500),
-	endPoint nvarchar(500),
-	foreign key(carID) references Cars(carID),
-	foreign key(customerID) references Customers(customerID),
-)
 
+
+Go
 Create table Province(
     provinceID int identity,
     provinceName nvarchar(500) unique,
 	primary key(ProvinceID)
 )
 go
-CREATE PROCEDURE InsertSchedule
-    @carID NVARCHAR(10),
-    @customerID NVARCHAR(10),
-    @historyID NVARCHAR(10),
-    @startDate DATETIME,
-    @endDate DATETIME,
-    @startPoint NVARCHAR(500),
-    @endPoint NVARCHAR(500)
-AS
-BEGIN
-    DECLARE @NewScheduleID NVARCHAR(10);
-
-    -- Tìm giá trị lớn nhất hiện tại trong bảng Schedule
-    SELECT @NewScheduleID = ISNULL(MAX(CAST(SUBSTRING(scheduleID, 2, LEN(scheduleID)) AS INT)), 0) + 1
-    FROM Schedule;
-
-    -- Định dạng lại scheduleID với độ dài 5 ký tự và thêm 'H' vào đầu
-    SET @NewScheduleID = 'S' + RIGHT('0000' + CAST(@NewScheduleID AS NVARCHAR(5)), 5);
-
-    -- Thêm bản ghi mới vào bảng Schedule với scheduleID được tạo
-    INSERT INTO Schedule (scheduleID, carID, customerID, historyID, startDate, endDate, startPoint, endPoint)
-    VALUES (@NewScheduleID, @carID, @customerID, @historyID, @startDate, @endDate, @startPoint, @endPoint);
-END;
-GO
-EXEC InsertSchedule 'C00004', 'Cs00013', 'H00009', '2023-12-10 00:57:32.000', '2023-12-19 00:57:32.000', 'An Giang', 'An Giang'
-delete from Schedule
-drop procedure dbo.InsertSchedule
-drop table Schedule
 insert into Province(provinceName) values
 (N'An Giang'),
 (N'Bà Rịa-Vũng Tàu'),

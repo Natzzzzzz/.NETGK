@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Midterm.GUI.ScheduleManage
 {
-    public partial class ScheduleManage : UserControl
+    public partial class Schedule : UserControl
     {
-        public ScheduleManage()
+        public Schedule()
         {
             InitializeComponent();
         }
@@ -25,6 +25,15 @@ namespace Midterm.GUI.ScheduleManage
             ManageScheduleBLL scheduleBLL = new ManageScheduleBLL();
             DataTable dataTable = scheduleBLL.getAvailableCarBLL();
             dgvSchedule.DataSource = dataTable;
+            dgvSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
+            foreach (DataGridViewColumn column in dgvSchedule.Columns)
+            {
+                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            }
+
+            dgvSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
 
         }
         private void getRentalCar()
@@ -32,6 +41,12 @@ namespace Midterm.GUI.ScheduleManage
             ManageScheduleBLL scheduleBLL = new ManageScheduleBLL();
             DataTable dataTable = scheduleBLL.getRentalCarBLL();
             dgvSchedule.DataSource = dataTable;
+
+            foreach (DataGridViewColumn column in dgvSchedule.Columns)
+            {
+                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                column.FillWeight = 1;
+            }
 
         }
         private void btnAvailable_Click(object sender, EventArgs e)
@@ -55,8 +70,6 @@ namespace Midterm.GUI.ScheduleManage
             int rowIndex = dgvSchedule.SelectedCells[0].RowIndex;
             String historyID = dgvSchedule.Rows[rowIndex].Cells[0].Value.ToString();
             String paymentStatus = dgvSchedule.Rows[rowIndex].Cells[12].Value.ToString();
-            MessageBox.Show(paymentStatus.Equals("Chưa thanh toán") + "");
-            MessageBox.Show(paymentStatus);
             if (paymentStatus.Equals("Chưa thanh toán"))
             {
                 Form form = new BillRental(historyID);

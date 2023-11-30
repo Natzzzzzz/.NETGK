@@ -57,7 +57,7 @@ namespace Midterm.GUI.CarManage
 
         private void btnBanTai_Click(object sender, EventArgs e)
         {
-            Form form = new CarDetail("bantai");
+            Form form = new CarDetail("Bán tải");
             form.ShowDialog();
         }
     }

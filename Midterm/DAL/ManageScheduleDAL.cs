@@ -89,11 +89,13 @@ namespace Midterm.DAL
             {
                 SqlConnection conn = new SqlConnection(strConn);
                 conn.Open();
-                String sSQL = "update History set paymentStatus = @status where historyID=@id";
+                /*                String sSQL = "update History set paymentStatus = @status where historyID=@id";
+                */
+                String sSQL = "update History set paymentStatus = N'Đã thanh toán' where historyID=@id";
                 SqlCommand cmd = new SqlCommand(sSQL, conn);
                 cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@status", "    ");
-                cmd.ExecuteNonQuery();
+/*                cmd.Parameters.AddWithValue("@status", "Đã thanh toán");
+*/                cmd.ExecuteNonQuery();
                 conn.Close();
             }
             catch (Exception ex)

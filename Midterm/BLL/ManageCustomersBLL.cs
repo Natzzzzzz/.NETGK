@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Midterm.DAL;
 using Midterm.DTO;
+using System.Windows;
 
 namespace Midterm.BLL
 {
@@ -20,6 +21,11 @@ namespace Midterm.BLL
         }
         public void insertCustomersBLL(Customers customer)
         {
+            if (customer.fullName=="" || customer.phoneNumber == "" || customer.address == "")
+            {
+                MessageBox.Show("Vui lòng nhập đủ thông tin khách hàng!!!");
+                return;
+            }
             manageCustomerDAL.insertCustomersDAL(customer);
         }
         public void deleteCustomersBLL(String id)
@@ -28,6 +34,11 @@ namespace Midterm.BLL
         }
         public void updateCustomersBLL(Customers customer)
         {
+            if (customer.fullName == "" || customer.phoneNumber == "" || customer.address == "")
+            {
+                MessageBox.Show("Vui lòng nhập đủ thông tin khách hàng!!!");
+                return;
+            }
             manageCustomerDAL.updateCustomersDAL(customer);
         }
         public DataTable getCustomersByIDBLL(String id)

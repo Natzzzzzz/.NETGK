@@ -66,9 +66,9 @@ namespace Midterm.GUI.ScheduleManage
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Thanh toán thành công!!");
             ManageScheduleBLL manageScheduleBLL = new ManageScheduleBLL();
             manageScheduleBLL.updateStatusBLL(id);
+            MessageBox.Show("Thanh toán thành công!!");
             this.Close();
         }
     }

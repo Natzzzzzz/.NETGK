@@ -32,17 +32,39 @@ namespace Midterm.GUI.Statistic
 
         private void Statictis_Load(object sender, EventArgs e)
         {
-            statictisByCategory();
+
+            StatictisBLL statictisBLL = new StatictisBLL();
+            DataTable dataTable = statictis.statictisByCategoryBLL(statictisBLL.getFirstDateOfMonthBLL(), statictisBLL.getLastDateOfMonthBLL());
+            dgvStatictis.DataSource = dataTable;
+
             SeriesCollection series = new SeriesCollection();
+            SeriesCollection series2 = new SeriesCollection();
+            SeriesCollection series3 = new SeriesCollection();
 
             foreach (DataRow row in statictis.statictisCarByCategory().Rows)
             {
                 int numberOfCars = Convert.ToInt32(row["NumberOfCars"]);
                 series.Add(new PieSeries() { Title = row["carCategory"].ToString(), Values = new ChartValues<int> { numberOfCars }, DataLabels = true, LabelPoint = labelPoint });
             }
+            foreach (DataRow row in statictis.statictisRevenueByMonthBLL().Rows)
+            {
+                int totalRevenue = Convert.ToInt32(row["TongDoanhThu"]);
+                series2.Add(new PieSeries() { Title = row["Thang"].ToString(), Values = new ChartValues<int> { totalRevenue }, DataLabels = true, LabelPoint = labelPoint });
+            }
+            foreach (DataRow row in statictis.statictisRevenueByYearBLL().Rows)
+            {
+                int totalRevenue = Convert.ToInt32(row["TongDoanhThu"]);
+                series3.Add(new PieSeries() { Title = row["Nam"].ToString(), Values = new ChartValues<int> { totalRevenue }, DataLabels = true, LabelPoint = labelPoint });
+            }
             pieChart1.Series = series;
             pieChart1.LegendLocation = LegendLocation.Bottom;
-            pieChart1.BackColor = Color.Transparent;
+            pieChart2.Series = series2;
+            pieChart2.LegendLocation = LegendLocation.Bottom;
+            pieChart3.Series = series3;
+            pieChart3.LegendLocation = LegendLocation.Bottom;
+            pieChart1.BackColorTransparent = true;
+            pieChart2.BackColorTransparent = true;
+            pieChart3.BackColorTransparent = true;
         }
 
         public void statictisByCategory()

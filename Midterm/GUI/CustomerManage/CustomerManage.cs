@@ -32,8 +32,8 @@ namespace Midterm.GUI.CustomerManage
             int rowIndex = dgvCustomers.SelectedCells[0].RowIndex;
             String accountID = dgvCustomers.Rows[rowIndex].Cells[0].Value.ToString();
             Form form = new UpdateCustomer(accountID);
-            form.ShowDialog();
             form.FormClosed += (s, args) => RefreshDataGridView();
+            form.ShowDialog();
 
         }
 

@@ -46,6 +46,7 @@ namespace Midterm.GUI.CustomerManage
             this.tbPhoneNumber.Name = "tbPhoneNumber";
             this.tbPhoneNumber.Size = new System.Drawing.Size(301, 29);
             this.tbPhoneNumber.TabIndex = 7;
+            this.tbPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPhoneNumber_KeyPress);
             // 
             // label2
             // 

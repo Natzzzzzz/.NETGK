@@ -62,21 +62,23 @@ namespace Midterm.GUI.CarManage
             ManageCarsBLL manageCarsBLL = new ManageCarsBLL();
             DataTable dataTable = manageCarsBLL.getCarsByCategory(category);
             dgvCar.DataSource = dataTable;
-            dgvCar.Columns[0].Width = dgvCar.Width/5;
-            dgvCar.Columns[1].Width = dgvCar.Width/5;
-            dgvCar.Columns[2].Width = dgvCar.Width/5;
-            dgvCar.Columns[3].Width = dgvCar.Width/5;
-            dgvCar.Columns[4].Width = dgvCar.Width/5;
+            dgvCar.Columns[0].Width = dgvCar.Width/6;
+            dgvCar.Columns[1].Width = dgvCar.Width/6;
+            dgvCar.Columns[2].Width = dgvCar.Width/6;
+            dgvCar.Columns[3].Width = dgvCar.Width/6;
+            dgvCar.Columns[4].Width = dgvCar.Width/6;
+            dgvCar.Columns[5].Width = dgvCar.Width/6;
         }
         private void picBox_Click(object sender, EventArgs e)
         {
             ManageCarsBLL search = new ManageCarsBLL();
             dgvCar.DataSource = search.searchCarsBrandBLL(tbSearch.Text, category);
-            dgvCar.Columns[0].Width = dgvCar.Width / 5;
-            dgvCar.Columns[1].Width = dgvCar.Width / 5;
-            dgvCar.Columns[2].Width = dgvCar.Width / 5;
-            dgvCar.Columns[3].Width = dgvCar.Width / 5;
-            dgvCar.Columns[4].Width = dgvCar.Width / 5;
+            dgvCar.Columns[0].Width = dgvCar.Width / 6;
+            dgvCar.Columns[1].Width = dgvCar.Width / 6;
+            dgvCar.Columns[2].Width = dgvCar.Width / 6;
+            dgvCar.Columns[3].Width = dgvCar.Width / 6;
+            dgvCar.Columns[4].Width = dgvCar.Width / 6;
+            dgvCar.Columns[5].Width = dgvCar.Width / 6;
         }
     }
 }

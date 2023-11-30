@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 namespace Midterm.GUI.ScheduleManage
 {
-    partial class ScheduleManage
+    partial class Schedule
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace Midterm.GUI.ScheduleManage
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScheduleManage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Schedule));
             this.dgvSchedule = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbSearch = new System.Windows.Forms.TextBox();
@@ -48,7 +48,7 @@ namespace Midterm.GUI.ScheduleManage
             this.dgvSchedule.Location = new System.Drawing.Point(41, 102);
             this.dgvSchedule.Name = "dgvSchedule";
             this.dgvSchedule.RowTemplate.Height = 25;
-            this.dgvSchedule.Size = new System.Drawing.Size(937, 366);
+            this.dgvSchedule.Size = new System.Drawing.Size(1093, 366);
             this.dgvSchedule.TabIndex = 19;
             // 
             // pictureBox1
@@ -75,7 +75,7 @@ namespace Midterm.GUI.ScheduleManage
             this.btnPayment.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnPayment.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold);
             this.btnPayment.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPayment.Location = new System.Drawing.Point(812, 37);
+            this.btnPayment.Location = new System.Drawing.Point(967, 37);
             this.btnPayment.Name = "btnPayment";
             this.btnPayment.Size = new System.Drawing.Size(166, 43);
             this.btnPayment.TabIndex = 54;
@@ -88,7 +88,7 @@ namespace Midterm.GUI.ScheduleManage
             this.btnAvailable.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnAvailable.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold);
             this.btnAvailable.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAvailable.Location = new System.Drawing.Point(416, 37);
+            this.btnAvailable.Location = new System.Drawing.Point(571, 37);
             this.btnAvailable.Name = "btnAvailable";
             this.btnAvailable.Size = new System.Drawing.Size(166, 43);
             this.btnAvailable.TabIndex = 55;
@@ -101,7 +101,7 @@ namespace Midterm.GUI.ScheduleManage
             this.btnRental.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnRental.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold);
             this.btnRental.ForeColor = System.Drawing.Color.Transparent;
-            this.btnRental.Location = new System.Drawing.Point(608, 37);
+            this.btnRental.Location = new System.Drawing.Point(763, 37);
             this.btnRental.Name = "btnRental";
             this.btnRental.Size = new System.Drawing.Size(166, 43);
             this.btnRental.TabIndex = 56;
@@ -120,7 +120,7 @@ namespace Midterm.GUI.ScheduleManage
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbSearch);
             this.Name = "ScheduleManage";
-            this.Size = new System.Drawing.Size(1030, 500);
+            this.Size = new System.Drawing.Size(1166, 500);
             this.Load += new System.EventHandler(this.ScheduleManage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSchedule)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

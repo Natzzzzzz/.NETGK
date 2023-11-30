@@ -10,6 +10,8 @@ using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
+using Midterm.GUI.Account;
+
 namespace Midterm
 {
     public partial class Main : Form
@@ -17,17 +19,21 @@ namespace Midterm
         private CarType carType;
         private CustomerManage customerManage;
         private CarManage carManage;
-        private ScheduleManage scheduleManage;
+        private Schedule scheduleManage;
         private Statictis statictis;
-        public Main()
+        private Account account;
+        private String userID;
+        public Main(String userID)
         {
-
             InitializeComponent();
-            carType = new CarType();
+            this.userID = userID;
+            carType = new CarType(userID);
             customerManage = new CustomerManage();
             carManage = new CarManage();
-            scheduleManage = new ScheduleManage();
+            scheduleManage = new Schedule();
             statictis = new Statictis();
+            account = new Account();
+            
 
         }
         private void Main_Load(object sender, EventArgs e)
@@ -38,16 +44,15 @@ namespace Midterm
             panel_main.Controls.Add(carType);
 
         }
-        private void btnCar_Click(object sender, EventArgs e)
+
+        private void btnOrder_Click(object sender, EventArgs e)
         {
-            this.menu_active.Location = new Point(1, btnCar.Location.Y);
-            lbl_title.Text = "Quản lý ô tô";
+            this.menu_active.Location = new Point(1, btnOrder.Location.Y);
+            lbl_title.Text = "Quản lý đơn đặt xe";
             panel_main.Controls.Clear();
-            panel_main.Controls.Add(carManage);
+            panel_main.Controls.Add(carType);
         }
-
-
-
+        
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             this.menu_active.Location = new Point(1, btnCustomer.Location.Y);
@@ -56,12 +61,12 @@ namespace Midterm
             panel_main.Controls.Add(customerManage);
         }
 
-        private void btnOrder_Click(object sender, EventArgs e)
+        private void btnCar_Click(object sender, EventArgs e)
         {
-            this.menu_active.Location = new Point(1, btnOrder.Location.Y);
-            lbl_title.Text = "Quản lý đơn đặt xe";
+            this.menu_active.Location = new Point(1, btnCar.Location.Y);
+            lbl_title.Text = "Quản lý ô tô";
             panel_main.Controls.Clear();
-            panel_main.Controls.Add(carType);
+            panel_main.Controls.Add(carManage);
         }
 
         private void btnSchedule_Click(object sender, EventArgs e)
@@ -81,6 +86,17 @@ namespace Midterm
 
         }
 
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
 
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            this.menu_active.Location = new Point(1, btnSchedule.Location.Y);
+            lbl_title.Text = "Thêm người dùng";
+            panel_main.Controls.Clear();
+            panel_main.Controls.Add(account);
+        }
     }
 }

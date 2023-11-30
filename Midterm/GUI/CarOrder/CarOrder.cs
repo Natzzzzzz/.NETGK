@@ -14,22 +14,30 @@ namespace Midterm.GUI.CarOrder
     public partial class CarOrder : Form
     {
         private String category;
-        public CarOrder(String carCategory)
+        private String userID;
+        public CarOrder(String carCategory, String userID)
         {
             InitializeComponent();
             this.category = carCategory;
+            this.userID = userID;
         }
         private void RefreshDataGridView()
         {
             ManageHistoryBLL manageHistoryBLL = new ManageHistoryBLL();
             DataTable dataTable = manageHistoryBLL.getHistoryByCategoryBLL(category);
             dgvCarOrder.DataSource = dataTable;
+            foreach (DataGridViewColumn column in dgvCarOrder.Columns)
+            {
+                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                column.FillWeight = 1;
+            }
         }
         private void btnNewOrder_Click(object sender, EventArgs e)
         {
-            Form form = new Car(category);
-            form.ShowDialog();
+            Form form = new Car(category, userID);
             form.FormClosed += (s, args) => RefreshDataGridView();
+
+            form.ShowDialog();
 
         }
 

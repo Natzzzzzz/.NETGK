@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Midterm.BLL
 {
@@ -25,10 +26,20 @@ namespace Midterm.BLL
         }
         public void insertCarBLL(Cars car)
         {
+            if (car.carCategory == "" || car.carBrand == "" || car.carName == "" || car.carFuel == "")
+            {
+                MessageBox.Show("Nhập thiếu thông tin, vui lòng bổ sung!!");
+                return;
+            }
             manageCarsDAL.insertCarDAL(car);
         }
         public void updateCarBLL(Cars car)
         {
+            if (car.carCategory == "" || car.carBrand == "" || car.carName == "" || car.carFuel == "")
+            {
+                MessageBox.Show("Nhập thiếu thông tin, vui lòng bổ sung!!");
+                return;
+            }
             ManageCarsDAL data = new ManageCarsDAL();
             data.updateCarDAL(car);
         }
