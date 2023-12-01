@@ -19,23 +19,17 @@ namespace Midterm.GUI.ScheduleManage
             InitializeComponent();
         }
 
-
-        private void getAvailableCar()
+        private void RefreshDataGridView()
         {
             ManageScheduleBLL scheduleBLL = new ManageScheduleBLL();
             DataTable dataTable = scheduleBLL.getAvailableCarBLL();
             dgvSchedule.DataSource = dataTable;
-            dgvSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-
-            foreach (DataGridViewColumn column in dgvSchedule.Columns)
+            for (int i = 0; i < dgvSchedule.Columns.Count; i++)
             {
-                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                dgvSchedule.Columns[i].Width = dgvSchedule.Width / dgvSchedule.Columns.Count;
             }
-
-            dgvSchedule.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-
         }
+
         private void getRentalCar()
         {
             ManageScheduleBLL scheduleBLL = new ManageScheduleBLL();
@@ -51,7 +45,7 @@ namespace Midterm.GUI.ScheduleManage
         }
         private void btnAvailable_Click(object sender, EventArgs e)
         {
-            getAvailableCar();
+            RefreshDataGridView();
         }
 
         private void btnRental_Click(object sender, EventArgs e)
@@ -61,12 +55,16 @@ namespace Midterm.GUI.ScheduleManage
 
         private void ScheduleManage_Load(object sender, EventArgs e)
         {
-            getRentalCar();
+            RefreshDataGridView();
         }
 
         private void btnPayment_Click_1(object sender, EventArgs e)
         {
-
+            if(dgvSchedule.ColumnCount == 6)
+            {
+                MessageBox.Show("Vui lòng chọn xe đã thuê để thực hiện thanh toán!!");
+                return;
+            }
             int rowIndex = dgvSchedule.SelectedCells[0].RowIndex;
             String historyID = dgvSchedule.Rows[rowIndex].Cells[0].Value.ToString();
             String paymentStatus = dgvSchedule.Rows[rowIndex].Cells[12].Value.ToString();

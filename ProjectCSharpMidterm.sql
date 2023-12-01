@@ -69,6 +69,25 @@ BEGIN
 	VALUES (@newCarID, @carName, @carCategory, @carBrand, @carFuel, @carStatus, @carRental, @map, @curbsideCamera, @tireSensor, @carWindows, @USB, @trunkLid, @bluetooth, @cameraJourney, @collisionSensor, @GPS, @spareTire, @camera360, @reversingCamera, @speedWarning);
 
 END;
+GO
+EXEC InsertCar 'Mini Cooper1', 'Mini', 'Mini', N'Xăng', N'Cho thuê', 340, 'Có', 'Không', 'Không', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
+EXEC InsertCar 'Mini Cooper2', 'Mini', 'Mini', N'Xăng', N'Cho thuê', 340, 'Có', 'Không', 'Không', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
+EXEC InsertCar 'Mini Cooper3', 'Mini', 'Mini', N'Xăng', N'Cho thuê', 370, 'Có', 'Không', 'Không', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
+EXEC InsertCar 'Sedan1', 'Sedan', 'BrandA', N'Xăng', N'Cho thuê', 340, 'Có', 'Không', 'Có', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có';
+EXEC InsertCar 'Sedan2', 'Sedan', 'BrandB', N'Dầu', 'Cho thuê', 340, 'Có', 'Không', 'Không', 'Có', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không';
+EXEC InsertCar 'Sedan3', 'Sedan', 'BrandC', N'Xăng', N'Cho thuê', 370, 'Có', 'Không', 'Không', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
+EXEC InsertCar 'Hatchback1', 'Hatchback', 'BrandX', N'Điện', N'Cho thuê', 340, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không';
+EXEC InsertCar 'Hatchback2', 'Hatchback', 'BrandY', N'Điện', N'Cho thuê', 340, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không';
+EXEC InsertCar 'Hatchback3', 'Hatchback', 'BrandZ', N'Điện', 'Cho thuê', 370, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không';
+EXEC InsertCar 'CUV1', 'CUV', 'BrandP', N'Xăng', 'Cho thuê', 340, 'Có', 'Có', 'Có', 'Có', 'Có', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có';
+EXEC InsertCar 'CUV2', 'CUV', 'BrandQ', N'Dầu', 'Cho thuê', 340, 'Có', 'Có', 'Không', 'Có', 'Có', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có';
+EXEC InsertCar 'CUV3', 'CUV', 'BrandR', N'Xăng', 'Cho thuê', 370, 'Có', 'Có', 'Không', 'Có', 'Có', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có';
+EXEC InsertCar 'SUV1', 'SUV', 'BrandS', N'Điện', 'Cho thuê', 340, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
+EXEC InsertCar 'SUV2', 'SUV', 'BrandT', N'Điện', 'Cho thuê', 340, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
+EXEC InsertCar 'SUV3', 'SUV', 'BrandU', N'Điện', 'Cho thuê', 370, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
+EXEC InsertCar 'MPV1', 'MPV', 'BrandV', N'Xăng', 'Cho thuê', 340, 'Có', 'Không', 'Có', 'Có', 'Không', 'Có', 'Có', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
+EXEC InsertCar 'Bán tải 1', 'Bán tải', 'Bán tải A', N'Dầu', 'Cho thuê', 340, 'Có', 'Không', 'Có', 'Có', 'Không', 'Có', 'Có', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
+EXEC InsertCar 'Bán tải 2', 'Bán tải', 'Bán tải B', N'Dầu', 'Cho thuê', 340, 'Có', 'Không', 'Có', 'Có', 'Không', 'Có', 'Có', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
 
 GO
 DECLARE @Counter INT = 1;
@@ -283,23 +302,7 @@ BEGIN
 
     SET @Counter = @Counter + 1;
 END;
-GO
-EXEC InsertCar 'Mini Cooper1', 'Mini', 'Mini', N'Xăng', N'Trống', 340, 'Có', 'Không', 'Không', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
-EXEC InsertCar 'Mini Cooper2', 'Mini', 'Mini', N'Xăng', N'Trống', 340, 'Có', 'Không', 'Không', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
-EXEC InsertCar 'Mini Cooper3', 'Mini', 'Mini', N'Xăng', N'Trống', 370, 'Có', 'Không', 'Không', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
-EXEC InsertCar 'Sedan1', 'Sedan', 'BrandA', N'Xăng', N'Trống', 340, 'Có', 'Không', 'Có', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có';
-EXEC InsertCar 'Sedan2', 'Sedan', 'BrandB', N'Dầu', 'Cho thuê', 340, 'Có', 'Không', 'Không', 'Có', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không';
-EXEC InsertCar 'Sedan3', 'Sedan', 'BrandC', N'Xăng', N'Trống', 370, 'Có', 'Không', 'Không', 'Có', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
-EXEC InsertCar 'Hatchback1', 'Hatchback', 'BrandX', N'Điện', N'Trống', 340, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không';
-EXEC InsertCar 'Hatchback2', 'Hatchback', 'BrandY', N'Điện', N'Không', 340, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không';
-EXEC InsertCar 'Hatchback3', 'Hatchback', 'BrandZ', N'Điện', 'Cho thuê', 370, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không';
-EXEC InsertCar 'CUV1', 'CUV', 'BrandP', N'Xăng', 'Cho thuê', 340, 'Có', 'Có', 'Có', 'Có', 'Có', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có';
-EXEC InsertCar 'CUV2', 'CUV', 'BrandQ', N'Dầu', 'Cho thuê', 340, 'Có', 'Có', 'Không', 'Có', 'Có', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có';
-EXEC InsertCar 'CUV3', 'CUV', 'BrandR', N'Xăng', 'Có', 370, 'Có', 'Có', 'Không', 'Có', 'Có', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có';
-EXEC InsertCar 'SUV1', 'SUV', 'BrandS', N'Điện', 'Có', 340, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
-EXEC InsertCar 'SUV2', 'SUV', 'BrandT', N'Điện', 'Không', 340, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
-EXEC InsertCar 'SUV3', 'SUV', 'BrandU', N'Điện', 'Có', 370, 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
-EXEC InsertCar 'MPV1', 'MPV', 'BrandV', N'Xăng', 'Có', 340, 'Có', 'Không', 'Có', 'Có', 'Không', 'Có', 'Có', 'Có', 'Không', 'Có', 'Không', 'Có', 'Không', 'Không';
+
 
 
 GO
@@ -487,25 +490,25 @@ EXEC InsertHistory '2023-09-02 10:00:00', '2023-09-11 14:00:00', '2023-09-15 20:
 EXEC InsertHistory '2023-10-05 12:00:00', '2023-10-15 16:00:00', '2023-10-20 22:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 700.25, 'S00003', 'C00003', 'Cs00003';
 EXEC InsertHistory '2023-01-01 12:00:00', '2023-01-10 16:00:00', '2023-01-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 300.75, 'S00003', 'C00031', 'Cs00002';
 EXEC InsertHistory '2023-02-05 12:00:00', '2023-02-10 16:00:00', '2023-02-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 400.50, 'S00002', 'C00032', 'Cs00003';
-EXEC InsertHistory '2023-03-01 08:00:00', '2023-03-05 12:00:00', '2023-03-10 18:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 500.00, 'A00001', 'C00033', 'Cs00001';
-EXEC InsertHistory '2023-04-02 10:00:00', '2023-04-11 14:00:00', '2023-04-15 20:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 600.75, 'S00002', 'C00034', 'Cs00002';
-EXEC InsertHistory '2023-05-05 12:00:00', '2023-05-15 16:00:00', '2023-05-20 22:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 700.25, 'S00003', 'C00035', 'Cs00003';
-EXEC InsertHistory '2023-06-01 08:00:00', '2023-06-05 12:00:00', '2023-06-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 800.00, 'A00001', 'C00036', 'Cs00001';
-EXEC InsertHistory '2023-07-02 10:00:00', '2023-07-11 14:00:00', '2023-07-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 900.50, 'S00003', 'C00037', 'Cs00002';
-EXEC InsertHistory '2023-08-05 12:00:00', '2023-08-15 16:00:00', '2023-08-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1000.75, 'S00007', 'C00038', 'Cs00003';
-EXEC InsertHistory '2023-09-01 08:00:00', '2023-09-05 12:00:00', '2023-09-10 18:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 1100.00, 'A00002', 'C00039', 'Cs00001';
+EXEC InsertHistory '2023-03-01 08:00:00', '2023-03-05 12:00:00', '2023-03-10 18:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 500.00, 'A00001', 'C00018', 'Cs00001';
+EXEC InsertHistory '2023-04-02 10:00:00', '2023-04-11 14:00:00', '2023-04-15 20:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 600.75, 'S00002', 'C00017', 'Cs00002';
+EXEC InsertHistory '2023-05-05 12:00:00', '2023-05-15 16:00:00', '2023-05-20 22:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 700.25, 'S00003', 'C00016', 'Cs00003';
+EXEC InsertHistory '2023-06-01 08:00:00', '2023-06-05 12:00:00', '2023-06-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 800.00, 'A00001', 'C00015', 'Cs00001';
+EXEC InsertHistory '2023-07-02 10:00:00', '2023-07-11 14:00:00', '2023-07-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 900.50, 'S00003', 'C00014', 'Cs00002';
+EXEC InsertHistory '2023-08-05 12:00:00', '2023-08-15 16:00:00', '2023-08-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1000.75, 'S00007', 'C00013', 'Cs00003';
+EXEC InsertHistory '2023-09-01 08:00:00', '2023-09-05 12:00:00', '2023-09-10 18:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 1100.00, 'A00002', 'C00012', 'Cs00001';
 GO
 -- Năm 2022
-EXEC InsertHistory '2022-11-01 08:00:00', '2022-11-05 12:00:00', '2022-11-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 800.50, 'A00001', 'C00006', 'Cs00001';
-EXEC InsertHistory '2022-12-02 10:00:00', '2022-12-11 14:00:00', '2022-12-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 900.75, 'S00002', 'C00135', 'Cs00002';
-EXEC InsertHistory '2022-01-05 12:00:00', '2022-01-15 16:00:00', '2022-01-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1000.25, 'S00003', 'C000179', 'Cs00003';
-EXEC InsertHistory '2022-02-01 08:00:00', '2022-02-05 12:00:00', '2022-02-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1100.75, 'S00003', 'C00200', 'Cs00003';
-EXEC InsertHistory '2022-03-02 10:00:00', '2022-03-11 14:00:00', '2022-03-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 1200.25, 'S00003', 'C00009', 'Cs00003';
-EXEC InsertHistory '2022-06-01 08:00:00', '2022-06-05 12:00:00', '2022-06-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 800.50, 'A00001', 'C00210', 'Cs00001';
-EXEC InsertHistory '2022-07-02 10:00:00', '2022-07-11 14:00:00', '2022-07-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 900.75, 'S00002', 'C00150', 'Cs00002';
-EXEC InsertHistory '2022-08-05 12:00:00', '2022-08-15 16:00:00', '2022-08-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1000.25, 'S00003', 'C00140', 'Cs00003';
-EXEC InsertHistory '2022-09-01 08:00:00', '2022-09-05 12:00:00', '2022-09-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1100.75, 'S00003', 'C000110', 'Cs00003';
-EXEC InsertHistory '2022-10-02 10:00:00', '2022-10-11 14:00:00', '2022-10-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 1200.25, 'S00003', 'C00206', 'Cs00003';
+EXEC InsertHistory '2022-11-01 08:00:00', '2022-11-05 12:00:00', '2022-11-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 800.50, 'A00001', 'C00002', 'Cs00001';
+EXEC InsertHistory '2022-12-02 10:00:00', '2022-12-11 14:00:00', '2022-12-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 900.75, 'S00002', 'C00003', 'Cs00002';
+EXEC InsertHistory '2022-01-05 12:00:00', '2022-01-15 16:00:00', '2022-01-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1000.25, 'S00003', 'C00004', 'Cs00003';
+EXEC InsertHistory '2022-02-01 08:00:00', '2022-02-05 12:00:00', '2022-02-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1100.75, 'S00003', 'C00005', 'Cs00003';
+EXEC InsertHistory '2022-03-02 10:00:00', '2022-03-11 14:00:00', '2022-03-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 1200.25, 'S00003', 'C00006', 'Cs00003';
+EXEC InsertHistory '2022-06-01 08:00:00', '2022-06-05 12:00:00', '2022-06-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 800.50, 'A00001', 'C00007', 'Cs00001';
+EXEC InsertHistory '2022-07-02 10:00:00', '2022-07-11 14:00:00', '2022-07-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 900.75, 'S00002', 'C00008', 'Cs00002';
+EXEC InsertHistory '2022-08-05 12:00:00', '2022-08-15 16:00:00', '2022-08-20 22:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1000.25, 'S00003', 'C00009', 'Cs00003';
+EXEC InsertHistory '2022-09-01 08:00:00', '2022-09-05 12:00:00', '2022-09-10 18:00:00', N'Đã thanh toán', 'An Giang', 'An Giang', 1100.75, 'S00003', 'C00010', 'Cs00003';
+EXEC InsertHistory '2022-10-02 10:00:00', '2022-10-11 14:00:00', '2022-10-15 20:00:00', N'Chưa thanh toán', 'An Giang', 'An Giang', 1200.25, 'S00003', 'C00011', 'Cs00003';
 
 
 

@@ -85,6 +85,7 @@ namespace Midterm.GUI.CarManage
             newCar.carCategory = tbLoaiXe.Text;
             newCar.carBrand = tbHangXe.Text;
             newCar.carStatus = "Trống";
+            newCar.carRental = double.Parse(tbRental.Text);
             if (rdbAll.Checked)
             {
                 newCar.carFuel = "Tất cả";

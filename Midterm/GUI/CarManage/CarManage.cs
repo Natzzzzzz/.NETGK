@@ -20,20 +20,20 @@ namespace Midterm.GUI.CarManage
 
         private void btnMini_Click(object sender, EventArgs e)
         {
-            Form form = new CarDetail("mini");
+            Form form = new CarDetail("Mini");
             form.ShowDialog();
         }
 
         private void btnSedan_Click(object sender, EventArgs e)
         {
-            Form form = new CarDetail("sedan");
+            Form form = new CarDetail("Sedan");
             form.ShowDialog();
 
         }
 
         private void btnHatchback_Click(object sender, EventArgs e)
         {
-            Form form = new CarDetail("hatchback");
+            Form form = new CarDetail("Hatchback");
             form.ShowDialog();
         }
 

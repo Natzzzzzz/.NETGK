@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Midterm.DAL;
 using Midterm.DTO;
 using System.Windows;
+using System.Net;
 
 namespace Midterm.BLL
 {
@@ -21,12 +22,19 @@ namespace Midterm.BLL
         }
         public void insertCustomersBLL(Customers customer)
         {
+            ManageHistoryBLL historyBLL = new ManageHistoryBLL();
             if (customer.fullName=="" || customer.phoneNumber == "" || customer.address == "")
             {
                 MessageBox.Show("Vui lòng nhập đủ thông tin khách hàng!!!");
                 return;
             }
+            else if(historyBLL.getCustomerIDBLL(customer.fullName, customer.phoneNumber, customer.address) != null)
+            {
+                MessageBox.Show("Khách hàng đã được thêm từ trước");
+                return;
+            }
             manageCustomerDAL.insertCustomersDAL(customer);
+
         }
         public void deleteCustomersBLL(String id)
         {

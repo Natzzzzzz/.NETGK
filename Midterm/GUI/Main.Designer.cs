@@ -32,6 +32,7 @@ namespace Midterm
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAccount = new System.Windows.Forms.Button();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.btnCar = new System.Windows.Forms.Button();
             this.menu_active = new System.Windows.Forms.Panel();
@@ -42,7 +43,6 @@ namespace Midterm
             this.panel_title = new System.Windows.Forms.Panel();
             this.lbl_title = new System.Windows.Forms.Label();
             this.panel_main = new System.Windows.Forms.Panel();
-            this.btnAccount = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel_title.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +62,19 @@ namespace Midterm
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 587);
             this.panel1.TabIndex = 0;
+            // 
+            // btnAccount
+            // 
+            this.btnAccount.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnAccount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnAccount.ForeColor = System.Drawing.Color.Transparent;
+            this.btnAccount.Location = new System.Drawing.Point(24, 421);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(176, 70);
+            this.btnAccount.TabIndex = 9;
+            this.btnAccount.Text = "Quản lý người dùng";
+            this.btnAccount.UseVisualStyleBackColor = false;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // btnCustomer
             // 
@@ -177,19 +190,6 @@ namespace Midterm
             this.panel_main.Size = new System.Drawing.Size(1166, 500);
             this.panel_main.TabIndex = 1;
             // 
-            // btnAccount
-            // 
-            this.btnAccount.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnAccount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnAccount.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAccount.Location = new System.Drawing.Point(24, 421);
-            this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Size = new System.Drawing.Size(176, 70);
-            this.btnAccount.TabIndex = 9;
-            this.btnAccount.Text = "Thêm người dùng";
-            this.btnAccount.UseVisualStyleBackColor = false;
-            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,7 +200,7 @@ namespace Midterm
             this.Controls.Add(this.panel1);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Quản lý cho thuê xe ô tô";
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel_title.ResumeLayout(false);

@@ -118,6 +118,7 @@ namespace Midterm.GUI.CarOrder
             history.endPoint = cbEndPoint.Text;
             history.totalMoney = float.Parse(tbTotalMoney.Text);
             history.accountID = userID;
+            //Nếu khách hàng chưa đăng ký thì insert vào bảng Cus
             if (historyBLL.getCustomerIDBLL(tbFullName.Text, tbPhoneNumber.Text, tbAddress.Text) == null)
             {
                 Customers customer = new Customers();
@@ -127,7 +128,7 @@ namespace Midterm.GUI.CarOrder
                 ManageCustomersBLL manageCustomersBLL = new ManageCustomersBLL();
                 manageCustomersBLL.insertCustomersBLL(customer);
                 history.customerID = historyBLL.getCustomerIDBLL(tbFullName.Text, tbPhoneNumber.Text, tbAddress.Text);
-            }else
+            }else //Đăng ký rồi thì select ID
             {
                 history.customerID = historyBLL.getCustomerIDBLL(tbFullName.Text, tbPhoneNumber.Text, tbAddress.Text);
             }

@@ -29,6 +29,7 @@ namespace Midterm.GUI.CustomerManage
 
             ManageCustomersBLL manageCustomersBLL = new ManageCustomersBLL();
             manageCustomersBLL.insertCustomersBLL(customer);
+            this.Close();
         }
 
         private void tbPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
